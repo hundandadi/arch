@@ -241,6 +241,7 @@
 ```bash
 		#安装输入法，搜狗拼音可选
 		sudo pacman -S fcitx fcitx-rime fcitx-im kcm-fcitx fcitx-sogoupinyin
+		pacman -S fcitx fcitx-im fcitx-cloudpinyin fcitx-configtool fcitx-googlepinyin fcitx-qt5
 		#配置输入法
 		sudo vim /home/<username>/.xprofile
             export LANG=zh_CN.UTF-8
@@ -383,6 +384,7 @@
         #安装主题
         git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
         #安装主题字体
+        sudo pacman -S nerd-fonts-complete
         wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
 		wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
 		mv PowerlineSymbols.otf ~/.local/share/fonts/
@@ -491,9 +493,29 @@
         kdeplasma-addons /全屏小部件
         telegram-desktop //电报
         kgamma5 //伽玛设置
+        libreswan //l2tp
 ```
 
+### 安装xfce4
 
+```bash
+pacman -S lightdm lightdm-gtk-greeter
 
-> ​		
->
+pacman -S xfce4 xfce4-goodies
+
+全局菜单
+libdbusmenu-gtk3 libdbusmenu-gtk2  libdbusmenu-glib  libdbusmenu-qt5 vala-panel-appmenu-registrar-git appmenu-gtk-module vala-panel-appmenu-xfce-git
+
+顶栏按钮
+libwnck  xfce4-windowck-plugin 
+网络
+network-manager-applet
+
+papirus-icon-theme
+
+virtualbox-guest-utils 
+
+```
+
+#### 
+
